@@ -1,0 +1,298 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url("./fonts/OpenSans-Regular.ttf");
+}
+@font-face {
+    font-family: "OpenSans-Bold";
+    src: url("./fonts/OpenSans-Bold.ttf");
+}
+@font-face {
+    font-family: "OpenSans-Light";
+    src: url("./fonts/OpenSans-Light.ttf");
+}
+@font-face {
+    font-family: "Myriad Pro";
+    src: url("./fonts/Myriad-Pro.otf");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+h1, h2, h3 {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
+Header {
+    height: 651px;
+    background: grey;
+    background: url('./img/header-bg.png') no-repeat center fixed;
+    background-size: cover;
+}
+Header .header-top {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 90px;
+    padding-top: 30px;
+}
+Header .header-top a:not(:first-child) {
+    margin-left: 20px;
+}
+Header .header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+Header .header-content h1 {
+    font-family: "Myriad Pro";
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-top: 245px;
+    color: #fff;
+}
+Header .header-content h1 span {
+    color: #cb2e2e;
+}
+Header .header-content .btn {
+    display: block;
+    width: 200px;
+    height: 55px;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 2px;
+    text-align: center;
+    font-family: "OpenSans-Bold";
+    font-size: 24px;
+    line-height: 55px;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+
+/*
+body .container, h1 .container, h2 .container, h3 .container {
+    max-width: 926px;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+body .container p, h1 .container p, h2 .container p, h3 .container p {
+    text-align: center;
+    color: #919191;
+    font-family: "OpenSans-Light";
+    font-size: 16px;
+    line-height: 30px;
+}
+
+body h2, body h3, h1 h2, h1 h3, h2 h2, h2 h3, h3 h2, h3 h3 {
+    color: #323232;
+    font-family: "OpenSans-Bold";
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+body h2, h1 h2, h2 h2, h3 h2 {
+    text-align: center;
+}
+
+body h3, h1 h3, h2 h3, h3 h3 {
+    font-size: 20px;
+}
+
+body .display, body .skills .skills-item, h1 .skills body .skills-item, h2 .skills body .skills-item, h3 .skills body .skills-item, body .team .users, h1 .team body .users, h2 .team body .users, h3 .team body .users, body .team .users .user-item .user-info, h1 .team .users .user-item body .user-info, h2 .team .users .user-item body .user-info, h3 .team .users .user-item body .user-info, body .contacts .contacts-info .message form div, h1 .contacts .contacts-info .message form body div, h2 .contacts .contacts-info .message form body div, h3 .contacts .contacts-info .message form body div, h1 .display, body .skills h1 .skills-item, h1 .skills .skills-item, h2 .skills h1 .skills-item, h3 .skills h1 .skills-item, body .team h1 .users, h1 .team .users, h2 .team h1 .users, h3 .team h1 .users, body .team .users .user-item h1 .user-info, h1 .team .users .user-item .user-info, h2 .team .users .user-item h1 .user-info, h3 .team .users .user-item h1 .user-info, body .contacts .contacts-info .message form h1 div, h1 .contacts .contacts-info .message form div, h2 .contacts .contacts-info .message form h1 div, h3 .contacts .contacts-info .message form h1 div, h2 .display, body .skills h2 .skills-item, h1 .skills h2 .skills-item, h2 .skills .skills-item, h3 .skills h2 .skills-item, body .team h2 .users, h1 .team h2 .users, h2 .team .users, h3 .team h2 .users, body .team .users .user-item h2 .user-info, h1 .team .users .user-item h2 .user-info, h2 .team .users .user-item .user-info, h3 .team .users .user-item h2 .user-info, body .contacts .contacts-info .message form h2 div, h1 .contacts .contacts-info .message form h2 div, h2 .contacts .contacts-info .message form div, h3 .contacts .contacts-info .message form h2 div, h3 .display, body .skills h3 .skills-item, h1 .skills h3 .skills-item, h2 .skills h3 .skills-item, h3 .skills .skills-item, body .team h3 .users, h1 .team h3 .users, h2 .team h3 .users, h3 .team .users, body .team .users .user-item h3 .user-info, h1 .team .users .user-item h3 .user-info, h2 .team .users .user-item h3 .user-info, h3 .team .users .user-item .user-info, body .contacts .contacts-info .message form h3 div, h1 .contacts .contacts-info .message form h3 div, h2 .contacts .contacts-info .message form h3 div, h3 .contacts .contacts-info .message form div {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+body .about, h1 .about, h2 .about, h3 .about {
+    background-color: #f7f7f8;
+}
+
+body .about p, h1 .about p, h2 .about p, h3 .about p {
+    text-align: center;
+    color: #919191;
+    font-family: "Open Sans";
+    font-size: 16px;
+    line-height: 30px;
+}
+
+body .history, h1 .history, h2 .history, h3 .history {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 86px;
+    padding-right: 86px;
+}
+
+body .history .img, h1 .history .img, h2 .history .img, h3 .history .img {
+    flex: 1;
+}
+
+body .history .history-info, h1 .history .history-info, h2 .history .history-info, h3 .history .history-info {
+    flex: 1;
+    margin-left: 50px;
+    padding-top: 50px;
+}
+
+body .history .history-info h2, h1 .history .history-info h2, h2 .history .history-info h2, h3 .history .history-info h2 {
+    text-align: left;
+}
+
+body .history .history-info p, h1 .history .history-info p, h2 .history .history-info p, h3 .history .history-info p {
+    color: #919191;
+    font-family: "Open Sans";
+    font-size: 16px;
+    text-align: justify;
+    line-height: 30px;
+}
+
+body .skills, h1 .skills, h2 .skills, h3 .skills {
+    background-color: #f7f7f8;
+    padding-bottom: 50px;
+}
+
+body .skills p, h1 .skills p, h2 .skills p, h3 .skills p {
+    text-align: center;
+    color: #919191;
+    font-family: "Open Sans";
+    font-size: 16px;
+    line-height: 30px;
+}
+
+body .skills .skills-item, h1 .skills .skills-item, h2 .skills .skills-item, h3 .skills .skills-item {
+    flex-wrap: wrap;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+body .skills .skills-item img, h1 .skills .skills-item img, h2 .skills .skills-item img, h3 .skills .skills-item img {
+    max-width: 100%;
+}
+
+body .team, h1 .team, h2 .team, h3 .team {
+    padding-left: 86px;
+    padding-right: 86px;
+}
+
+body .team .users, h1 .team .users, h2 .team .users, h3 .team .users {
+    flex-wrap: wrap;
+}
+
+body .team .users .user-item, h1 .team .users .user-item, h2 .team .users .user-item, h3 .team .users .user-item {
+    display: flex;
+    flex-direction: column;
+}
+
+body .team .users .user-item .user-info, h1 .team .users .user-item .user-info, h2 .team .users .user-item .user-info, h3 .team .users .user-item .user-info {
+    margin-top: 10px;
+}
+
+body .team .users .user-item .user-info span, h1 .team .users .user-item .user-info span, h2 .team .users .user-item .user-info span, h3 .team .users .user-item .user-info span {
+    color: #323232;
+    font-family: "OpenSans-Bold";
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: uppercase;
+}
+
+body .team .users .user-item .user-info div a:not(:first-child), h1 .team .users .user-item .user-info div a:not(:first-child), h2 .team .users .user-item .user-info div a:not(:first-child), h3 .team .users .user-item .user-info div a:not(:first-child) {
+    margin-left: 10px;
+}
+
+body .team .users .user-item span, h1 .team .users .user-item span, h2 .team .users .user-item span, h3 .team .users .user-item span {
+    color: #919191;
+    font-family: "OpenSans-Light";
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+body .contacts, h1 .contacts, h2 .contacts, h3 .contacts {
+    background-color: #f7f7f8;
+    padding-right: 86px;
+    padding-left: 86px;
+}
+
+body .contacts .contacts-info, h1 .contacts .contacts-info, h2 .contacts .contacts-info, h3 .contacts .contacts-info {
+    display: flex;
+}
+
+body .contacts .contacts-info .details, h1 .contacts .contacts-info .details, h2 .contacts .contacts-info .details, h3 .contacts .contacts-info .details {
+    flex: 1;
+}
+
+body .contacts .contacts-info .details .details-item, h1 .contacts .contacts-info .details .details-item, h2 .contacts .contacts-info .details .details-item, h3 .contacts .contacts-info .details .details-item {
+    margin-top: 30px;
+}
+
+body .contacts .contacts-info .details .details-item span, h1 .contacts .contacts-info .details .details-item span, h2 .contacts .contacts-info .details .details-item span, h3 .contacts .contacts-info .details .details-item span {
+    color: #919191;
+    font-family: "Myriad Pro";
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+body .contacts .contacts-info .details p, h1 .contacts .contacts-info .details p, h2 .contacts .contacts-info .details p, h3 .contacts .contacts-info .details p {
+    color: #919191;
+    font-family: "OpenSans-Light";
+    font-size: 16px;
+    text-align: justify;
+    line-height: 30px;
+}
+
+body .contacts .contacts-info .message, h1 .contacts .contacts-info .message, h2 .contacts .contacts-info .message, h3 .contacts .contacts-info .message {
+    flex: 1;
+    margin-left: 20px;
+}
+
+body .contacts .contacts-info .message form div, h1 .contacts .contacts-info .message form div, h2 .contacts .contacts-info .message form div, h3 .contacts .contacts-info .message form div {
+    margin-top: 30px;
+}
+
+body .contacts .contacts-info .message form div input, h1 .contacts .contacts-info .message form div input, h2 .contacts .contacts-info .message form div input, h3 .contacts .contacts-info .message form div input {
+    width: 269px;
+    height: 40px;
+}
+
+body .contacts .contacts-info .message form textarea, h1 .contacts .contacts-info .message form textarea, h2 .contacts .contacts-info .message form textarea, h3 .contacts .contacts-info .message form textarea {
+    margin-top: 20px;
+}
+
+body .contacts .contacts-info .message .send, h1 .contacts .contacts-info .message .send, h2 .contacts .contacts-info .message .send, h3 .contacts .contacts-info .message .send {
+    display: block;
+    width: 199px;
+    height: 55px;
+    border-radius: 1px;
+    background-color: #ff0000;
+    color: #ffffff;
+    font-family: "OpenSans-Bold";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 55px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 30px;
+}
+
+body footer, h1 footer, h2 footer, h3 footer {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    align-items: center;
+}
+
+body footer a, h1 footer a, h2 footer a, h3 footer a {
+    display: flex;
+    align-items: center;
+}
+
+body footer a:not(:first-child), h1 footer a:not(:first-child), h2 footer a:not(:first-child), h3 footer a:not(:first-child) {
+    margin-left: 20px;
+}*/
