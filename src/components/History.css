@@ -1,0 +1,24 @@
+.History {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 86px;
+    padding-right: 86px;
+}
+.History h2 {
+    text-align: left;
+}
+.History .img, .History .history-info {
+    flex: 1;
+}
+.History .history-info {
+    margin-left: 50px;
+    padding-top: 50px;
+}
+
+.History .history-info p {
+    color: #919191;
+    font-family: "OpenSans-Light";
+    font-size: 16px;
+    text-align: justify;
+    line-height: 30px;
+}

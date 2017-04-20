@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './Header.css';
+
 import facebookImg from '../img/facebook.png';
 import twitterImg from '../img/tw.png';
 import googleImg from '../img/google.png';

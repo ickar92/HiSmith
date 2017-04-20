@@ -1,0 +1,34 @@
+.Team {
+    padding-left: 86px;
+    padding-right: 86px;
+}
+.Team .users {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.Team .users .user-item {
+    display: flex;
+    flex-direction: column;
+}
+.Team .users .user-item .user-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.Team .users .user-item span {
+    color: #919191;
+    font-family: "OpenSans-Light";
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.Team .users .user-item .user-info span {
+    color: #323232;
+    font-family: "OpenSans-Bold";
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: uppercase;
+}
+.Team .users .user-item .user-info div a:not(:first-child) {
+    margin-left: 10px;
+}
